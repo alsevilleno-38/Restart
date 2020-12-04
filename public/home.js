@@ -1,11 +1,8 @@
 
 
 $(function () {
-    $("#run").on("click", function (e) {
-        const val = $("p").map(function (index, element) {
-            return $(element).text();
-        });
-        console.log(val.get());
+    $("#yes").on("change", function (e) {
+        
     })
 });
 
