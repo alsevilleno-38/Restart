@@ -5,6 +5,9 @@
     font-family: "Roboto";
     box-sizing: border-box;
 }
+body {
+    height: 2000px;
+}
 .box {
     height: 3rem;
     font-size: 2rem;
