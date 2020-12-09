@@ -13,6 +13,9 @@
     margin: 0.3rem;
     background-color: antiquewhite;
 }
+.root {
+    margin: 1rem;
+}
 .square {
     height: 3rem;
     font-size: 2rem;
