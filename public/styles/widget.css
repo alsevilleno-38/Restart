@@ -5,10 +5,16 @@
     font-family: "Roboto";
     box-sizing: border-box;
 }
-body {
-    height: 2000px;
-}
+
 .box {
+    height: 3rem;
+    font-size: 2rem;
+    font-weight: bold;
+    border: 2px solid #333;
+    margin: 0.3rem;
+    background-color: antiquewhite;
+}
+.container {
     height: 3rem;
     font-size: 2rem;
     font-weight: bold;
@@ -26,4 +32,7 @@ body {
     border: 2px solid #333;
     margin: 0.3rem;
     background-color: yellow;
+}
+.input-item {
+    margin-top: 0.3rem;
 }
