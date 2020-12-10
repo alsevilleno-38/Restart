@@ -1,5 +1,5 @@
 $(function () {
-    $("#name").val("");
+    $("#name").val("    ");
     $("#btn").on("click", function (e) {
         // $(".container").load("/process", {text: "text"});
     })
