@@ -10,14 +10,75 @@
 </head>
 <body>
     <div class="root">
-        <div class="container">0</div>
-        <button id="btn">Click Me</button>  
-        <!-- <div id="item">1</div>
-        <div id="item">2</div>
-        <div id="item">3</div> -->
-        <input type="text" id="name">              
-    </div>
+        <form id="application-form">
+            <legend><b>Application Form</b></legend>
+            <fieldset>
+                <legend>Basic</legend>
+                <div class="input-item">
+                    <label for="name">Name</label>             
+                    <br>
+                    <input type="text" name="name" id="name">
+                </div>
+                <div class="input-item">
+                    <label for="age">Age</label>             
+                    <br>
+                    <input type="number" name="age" id="age" max="1000" size="6">
+                </div>
+                <div class="input-item">
+                    <label for="gender">Gender</label>             
+                    <br>
+                    <select name="gender" id="gender">
+                        <option value="none">---</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Additional</legend>
+                <div class="input-item">
+                    <label>Marital Status</label>             
+                    <br>
+                    <label for="single">Single</label>             
+                    <input type="radio" name="marital-status" id="single">                    
+                    <label for="married">Married</label>             
+                    <input type="radio" name="marital-status" id="married">                                        
+                </div>
+                <div class="input-item">                    
+                    <label>Favorite Food</label>             
+                    <br>
+                    <label for="apple">Apple</label>             
+                    <input type="checkbox" name="apple" id="apple" class="fav-food">                    
+                    <label for="orange">Orange</label>             
+                    <input type="checkbox" name="orange" id="orange" class="fav-food">                                        
+                    <label for="grapes">Grapes</label>             
+                    <input type="checkbox" name="grapes" id="grapes" class="fav-food">                                                            
+                </div>
+                <div class="input-item">
+                    <label for="description">Description</label>             
+                    <br>
+                    <input list="jobs" type="text" id="description">
+                    <datalist id="jobs">
+                        <option value="Developer">
+                        <option value="DevOps">
+                        <option value="Systems">
+                        <option value="Network">
+                    </datalist>
+                </div>
     
+                <div class="input-item">
+                    <label for="comment">Comment</label>             
+                    <br>
+                    <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+                </div>
+            </fieldset>
+            <div class="input-item">
+                <input type="submit" id="submit">
+                <button id="populate">Populate Items</button>
+                <button id="reset">Reset</button>            
+            </div>
+        </form>
 </body>
 <script src="scripts/widget.js"></script>
 </html>
